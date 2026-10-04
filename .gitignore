@@ -1,0 +1,13 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Temporary & Editor Folders
+.vscode/
+.idea/
+
+# Coursework exercises
+sectionR/
+
