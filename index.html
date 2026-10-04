@@ -1,550 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character Encoding & Responsive Viewport -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Document Meta & SEO -->
-  <title>Saroj Kumar Kushwaha | IT Student & Software Portfolio</title>
-  <meta name="description" content="Portfolio of Saroj Kumar Kushwaha, Bachelor of Information Technology student at Model Institute of Technology. Demonstrating software engineering, Linux administration, and digital design.">
-  <meta name="author" content="Saroj Kumar Kushwaha">
-
-  <!-- Open Graph Meta Tags for Social Sharing -->
-  <meta property="og:title" content="Saroj Kumar Kushwaha | Portfolio">
-  <meta property="og:description" content="Modern portfolio showcasing projects in C, Python, Linux Administration, and Responsive Web Architecture.">
-  <meta property="og:image" content="assets/images/profile.jpeg">
-  <meta property="og:type" content="website">
-
-  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- External Stylesheet (Separation of Concerns) -->
+  <title>Saroj Kumar Kushwaha | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Accessible Skip Navigation Link -->
-  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+  <header>
+    <div class="wrap">
+      <h1>Saroj Kumar Kushwaha</h1>
+      <p>BIT Student | Technology Enthusiast | Sales & Marketing | Graphic Design</p>
 
-  <!-- =========================================================================
-       Header & Navigation
-       ========================================================================= -->
-  <header class="site-header">
-    <div class="wrap nav-container">
-      <a href="#hero" class="site-brand" aria-label="Saroj Kumar Kushwaha Homepage">
-        <span class="brand-badge">SK</span>
-        <span>Saroj.dev</span>
-      </a>
-
-      <!-- Mobile Hamburger Toggle -->
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
-
-      <!-- Main Navigation Menu -->
-      <nav class="site-nav" id="siteNav" aria-label="Primary Site Navigation">
-        <ul class="nav-list">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="nav-cta">
-          <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
-        </div>
       </nav>
     </div>
   </header>
 
-  <!-- =========================================================================
-       Main Content Container
-       ========================================================================= -->
-  <main id="main-content">
+  <main class="wrap">
 
-    <!-- -----------------------------------------------------------------------
-         Hero Section
-         ----------------------------------------------------------------------- -->
-    <section id="hero" class="wrap hero-section" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <div class="status-badge">
-          <span class="status-dot"></span>
-          <span>BIT Student @ Model Institute of Technology</span>
-        </div>
-        <h1 id="hero-title" class="hero-title">
-          Hi, I'm <span class="gradient-text">Saroj Kumar</span> Kushwaha
-        </h1>
-        <p class="hero-subtitle">
-          Technology Enthusiast • Systems & Networking • Digital Strategist
+    <section id="about">
+     <img src="assets/images/profile.jpeg" alt="Saroj Kumar Kushwaha">
+
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I am a motivated Bachelor of Information Technology student at
+          Model Institute of Technology. I have experience in sales,
+          marketing, graphic design, and digital content creation.
         </p>
-        <p class="hero-lead">
-          Building resilient software systems, mastering Linux environments, and fusing technology with strategic sales, marketing, and modern UI design.
+
+        <p>
+          My interests include software development, networking, Linux,
+          digital marketing, and entrepreneurship.
         </p>
-        
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">
-            <span>Explore Projects</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-          <a href="#contact" class="btn btn-outline">
-            <span>Contact Me</span>
-          </a>
-        </div>
-
-        <div class="hero-socials">
-          <span>Connect:</span>
-          <div class="social-links">
-            <a href="https://github.com/kushx7" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
-            <a href="mailto:singsaroj737@gmail.com" class="social-icon-btn" aria-label="Send Email">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="avatar-wrapper">
-          <img src="assets/images/profile.jpeg" alt="Portrait of Saroj Kumar Kushwaha" class="avatar-img" width="310" height="310">
-        </div>
-        <div class="floating-card">
-          <div class="floating-card-icon">🚀</div>
-          <div>
-            <p class="floating-card-title">Bachelor of IT</p>
-            <p class="floating-card-subtitle">Model Institute of Technology</p>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- -----------------------------------------------------------------------
-         About Section
-         ----------------------------------------------------------------------- -->
-    <section id="about" class="section-block" aria-labelledby="about-heading">
-      <div class="wrap">
-        <div class="section-header">
-          <span class="section-tag">Profile Overview</span>
-          <h2 id="about-heading">About Me</h2>
-          <p class="section-description">Dedicated IT scholar combining computational logic with creative business acumen.</p>
-        </div>
+    <section id="skills">
+      <h2>Skills</h2>
 
-        <div class="about-grid">
-          <article class="about-text">
-            <p>
-              I am a driven <strong>Bachelor of Information Technology (BIT)</strong> student at <em>Model Institute of Technology</em>. My academic and professional journey is focused on the intersection of systems architecture, procedural programming, and practical digital solutions.
-            </p>
-            <p>
-              Beyond technical coursework, I bring practical experience in sales, digital marketing, graphic design, and brand storytelling. This multifaceted background enables me to build software solutions that are not only robust under the hood, but also intuitive, visually engaging, and aligned with user needs.
-            </p>
-            <p>
-              My ongoing focus includes deepening my mastery of software engineering, Linux system internals, scalable computer networks, and full-stack web standards.
-            </p>
-          </article>
-
-          <aside class="about-highlights" aria-label="Key Achievements & Metrics">
-            <div class="stat-card">
-              <div class="stat-number">BIT</div>
-              <div class="stat-label">Model Institute of Tech</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">4+</div>
-              <div class="stat-label">Core Domains Mastered</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">100%</div>
-              <div class="stat-label">Semantic HTML5 & CSS3</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">Git</div>
-              <div class="stat-label">Version Controlled</div>
-            </div>
-          </aside>
-        </div>
-      </div>
+      <ul>
+        <li>C Programming</li>
+        <li>Python</li>
+        <li>SQL and Databases</li>
+        <li>Networking</li>
+        <li>Linux Administration</li>
+        <li>HTML, CSS, WordPress, Canva</li>
+      </ul>
     </section>
 
-    <!-- -----------------------------------------------------------------------
-         Skills Section
-         ----------------------------------------------------------------------- -->
-    <section id="skills" class="section-block" aria-labelledby="skills-heading">
-      <div class="wrap">
-        <div class="section-header">
-          <span class="section-tag">Technical Competencies</span>
-          <h2 id="skills-heading">Skills & Capabilities</h2>
-          <p class="section-description">A balanced portfolio of programming languages, infrastructure tools, and design capabilities.</p>
-        </div>
+    <section id="projects">
+      <h2>Projects</h2>
 
-        <div class="skills-grid">
-          <!-- Skill Card 1: Core Programming -->
-          <article class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-card-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-              </div>
-              <h3>Programming Languages</h3>
-            </div>
-            <p>Structured problem solving, memory management, algorithms, and modular procedural logic.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">C Language</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Data Structures</span>
-              <span class="skill-tag">Algorithms</span>
-            </div>
-          </article>
+      <article>
+        <h3>Personal Expense Manager</h3>
+        <p>
+          A budget tracking and expense management system developed using C.
+        </p>
+      </article>
 
-          <!-- Skill Card 2: Systems & Databases -->
-          <article class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-card-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
-              </div>
-              <h3>Systems & Databases</h3>
-            </div>
-            <p>Command line environments, process management, relational data schemas, and SQL querying.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">Linux Administration</span>
-              <span class="skill-tag">Bash Shell</span>
-              <span class="skill-tag">SQL & Relational DBs</span>
-              <span class="skill-tag">File Systems</span>
-            </div>
-          </article>
-
-          <!-- Skill Card 3: Networks & Web Tech -->
-          <article class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-card-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-              </div>
-              <h3>Web & Networking</h3>
-            </div>
-            <p>Network topologies, subnetting, client-server models, and modern standards-compliant web development.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">HTML5 Semantics</span>
-              <span class="skill-tag">CSS3 (Flex & Grid)</span>
-              <span class="skill-tag">Computer Networking</span>
-              <span class="skill-tag">Git & GitHub</span>
-            </div>
-          </article>
-
-          <!-- Skill Card 4: Creative & Marketing -->
-          <article class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-card-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
-              </div>
-              <h3>Design & Strategy</h3>
-            </div>
-            <p>Visual communication, social media campaigns, brand collateral, and client acquisition.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">Graphic Design</span>
-              <span class="skill-tag">Canva</span>
-              <span class="skill-tag">WordPress</span>
-              <span class="skill-tag">Digital Marketing</span>
-              <span class="skill-tag">Sales Funnels</span>
-            </div>
-          </article>
-        </div>
-      </div>
+      <article>
+        <h3>Networking Labs</h3>
+        <p>
+          Practical networking and Linux administration projects involving
+          network configuration, troubleshooting, and system administration.
+        </p>
+      </article>
     </section>
 
-    <!-- -----------------------------------------------------------------------
-         Projects Section
-         ----------------------------------------------------------------------- -->
-    <section id="projects" class="section-block" aria-labelledby="projects-heading">
-      <div class="wrap">
-        <div class="section-header">
-          <span class="section-tag">Featured Works</span>
-          <h2 id="projects-heading">Selected Projects</h2>
-          <p class="section-description">Practical applications demonstrating procedural programming, networking infrastructure, and web design.</p>
-        </div>
+    <section id="contact">
+      <h2>Contact Me</h2>
 
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <article class="project-card">
-            <figure class="project-thumbnail">
-              <img src="assets/images/project-expense.svg" alt="Illustration of Personal Expense Manager in C" loading="lazy">
-            </figure>
-            <div class="project-content">
-              <span class="project-badge badge-c">C Programming</span>
-              <h3 class="project-title">Personal Expense Manager</h3>
-              <p class="project-description">
-                A robust CLI financial tracking application built in C. Implements file persistence (`database.dat`), structured records, budget threshold triggers, and categorical reporting for students.
-              </p>
-              <div class="project-stack">
-                <span class="project-stack-item">C Language</span>
-                <span class="project-stack-item">File I/O</span>
-                <span class="project-stack-item">Memory Alloc</span>
-                <span class="project-stack-item">CLI UX</span>
-              </div>
-              <div class="project-footer">
-                <a href="https://github.com/kushx7" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <span>View Repository</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-              </div>
-            </div>
-          </article>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-          <!-- Project 2 -->
-          <article class="project-card">
-            <figure class="project-thumbnail">
-              <img src="assets/images/project-network.svg" alt="Network Topology Diagram" loading="lazy">
-            </figure>
-            <div class="project-content">
-              <span class="project-badge badge-linux">Systems & Networks</span>
-              <h3 class="project-title">Networking & Linux Infrastructure Lab</h3>
-              <p class="project-description">
-                Comprehensive practical networking and system administration lab involving Debian server deployment, subnet routing, iptables firewall rule enforcement, and automated Bash maintenance scripts.
-              </p>
-              <div class="project-stack">
-                <span class="project-stack-item">Linux (Debian)</span>
-                <span class="project-stack-item">TCP/IP</span>
-                <span class="project-stack-item">Bash Shell</span>
-                <span class="project-stack-item">iptables</span>
-              </div>
-              <div class="project-footer">
-                <a href="https://github.com/kushx7" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <span>Lab Specs</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-              </div>
-            </div>
-          </article>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-          <!-- Project 3 -->
-          <article class="project-card">
-            <figure class="project-thumbnail">
-              <img src="assets/images/project-portfolio.svg" alt="Responsive Web Architecture Diagram" loading="lazy">
-            </figure>
-            <div class="project-content">
-              <span class="project-badge badge-web">Web Architecture</span>
-              <h3 class="project-title">Responsive Portfolio Website</h3>
-              <p class="project-description">
-                Engineered with strict separation of concerns, semantic HTML5 tags, custom CSS3 properties, CSS Grid, and Flexbox layouts. Fully responsive across devices and hosted live on GitHub Pages.
-              </p>
-              <div class="project-stack">
-                <span class="project-stack-item">HTML5</span>
-                <span class="project-stack-item">CSS3 Variables</span>
-                <span class="project-stack-item">Flexbox / Grid</span>
-                <span class="project-stack-item">GitHub Pages</span>
-              </div>
-              <div class="project-footer">
-                <a href="https://kushx7.github.io/week-2-example/" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <span>Live Website</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-              </div>
-            </div>
-          </article>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-          <!-- Project 4 -->
-          <article class="project-card">
-            <figure class="project-thumbnail">
-              <img src="assets/images/project-marketing.svg" alt="Digital Brand Assets Visual" loading="lazy">
-            </figure>
-            <div class="project-content">
-              <span class="project-badge badge-marketing">Design & Strategy</span>
-              <h3 class="project-title">Digital Marketing & Brand Strategy</h3>
-              <p class="project-description">
-                End-to-end promotional campaign including high-converting visual collateral designed in Canva, target audience segmentation, and sales funnel optimization achieving strong user engagement.
-              </p>
-              <div class="project-stack">
-                <span class="project-stack-item">Graphic Design</span>
-                <span class="project-stack-item">Canva</span>
-                <span class="project-stack-item">Campaign Strategy</span>
-                <span class="project-stack-item">Analytics</span>
-              </div>
-              <div class="project-footer">
-                <a href="#contact" class="project-link">
-                  <span>Inquire Details</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- -----------------------------------------------------------------------
-         Education & Experience Section
-         ----------------------------------------------------------------------- -->
-    <section id="education" class="section-block" aria-labelledby="education-heading">
-      <div class="wrap">
-        <div class="section-header">
-          <span class="section-tag">Milestones</span>
-          <h2 id="education-heading">Education & Experience</h2>
-          <p class="section-description">Academic credentials and practical leadership roles that shaped my technical foundation.</p>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">Current Student (2024 – Present)</span>
-              <h3 class="timeline-title">Bachelor of Information Technology (BIT)</h3>
-              <p class="timeline-org">Model Institute of Technology</p>
-              <p class="timeline-desc">
-                Comprehensive undergraduate curriculum covering Structured Programming (C), Object-Oriented Systems, Computer Architecture, Database Management Systems, Computer Networks, and Web Technologies.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">Professional Role</span>
-              <h3 class="timeline-title">Sales, Marketing & Graphic Design Specialist</h3>
-              <p class="timeline-org">Freelance & Commercial Engagements</p>
-              <p class="timeline-desc">
-                Managed marketing collateral creation, customer relationship management, digital campaign design, and client communications to drive revenue and market presence.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- -----------------------------------------------------------------------
-         Contact Section
-         ----------------------------------------------------------------------- -->
-    <section id="contact" class="section-block" aria-labelledby="contact-heading">
-      <div class="wrap">
-        <div class="section-header">
-          <span class="section-tag">Get in Touch</span>
-          <h2 id="contact-heading">Contact Me</h2>
-          <p class="section-description">Have a project in mind, a collaboration proposal, or academic inquiry? Let's connect!</p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Contact Direct Information -->
-          <div class="contact-info">
-            <h3>Let's build something remarkable together</h3>
-            <p>
-              I am open to software development internships, networking/system administration roles, and collaborative projects. Feel free to reach out directly through any of the channels below.
-            </p>
-
-            <div class="contact-info-list">
-              <div class="contact-info-card">
-                <div class="contact-icon-wrapper">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </div>
-                <div>
-                  <div class="contact-label">Email Address</div>
-                  <a href="mailto:singsaroj737@gmail.com" class="contact-value">singsaroj737@gmail.com</a>
-                </div>
-              </div>
-
-              <div class="contact-info-card">
-                <div class="contact-icon-wrapper">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </div>
-                <div>
-                  <div class="contact-label">GitHub Profile</div>
-                  <a href="https://github.com/kushx7" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/kushx7</a>
-                </div>
-              </div>
-
-              <div class="contact-info-card">
-                <div class="contact-icon-wrapper">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                </div>
-                <div>
-                  <div class="contact-label">Location</div>
-                  <div class="contact-value">Janakpurdham / Kathmandu, Nepal</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your message has been simulated successfully.');">
-            <div class="form-group">
-              <label for="contact-name" class="form-label">Full Name</label>
-              <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. John Doe" required>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-email" class="form-label">Email Address</label>
-              <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-subject" class="form-label">Subject</label>
-              <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Collaboration Opportunity" required>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-message" class="form-label">Message</label>
-              <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="Write your message here..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-full">
-              <span>Send Message</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-            </button>
-          </form>
-        </div>
-      </div>
+        <button type="submit">Send</button>
+      </form>
     </section>
 
   </main>
 
-  <!-- =========================================================================
-       Footer
-       ========================================================================= -->
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <h4>Saroj Kumar Kushwaha</h4>
-          <p>Bachelor of Information Technology • Model Institute of Technology</p>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/kushx7" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-          </a>
-          <a href="mailto:singsaroj737@gmail.com" class="social-icon-btn" aria-label="Email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Saroj Kumar Kushwaha. All rights reserved. Deployed on GitHub Pages.</p>
-        <a href="#hero" class="back-to-top">
-          <span>Back to top</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
-        </a>
-      </div>
-    </div>
+  <footer>
+    <p>© 2026 Saroj Kumar Kushwaha</p>
+    <p>Email: singsaroj737@hmail.com</p>
   </footer>
 
-  <!-- Light Mobile Navigation Handler -->
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const siteNav = document.getElementById('siteNav');
-    if (navToggle && siteNav) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = siteNav.classList.toggle('is-open');
-        navToggle.setAttribute('aria-expanded', isOpen);
-      });
-      // Close nav when clicking a link
-      siteNav.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-          siteNav.classList.remove('is-open');
-          navToggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-    }
-  </script>
 </body>
 </html>
